@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping</title>
+    <title>OnlineShop - Online Shopping</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -38,6 +38,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
                     </li>
+
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fas fa-globe"></i></a>
                     </li>
@@ -50,321 +52,194 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container text-center animate-fadeIn">
-            <h1 class="display-4 fw-bold mb-4">Shop the Best Deals Online</h1>
-            <p class="lead mb-5">Discover amazing products across all categories at unbeatable prices</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="#" class="btn btn-light btn-lg px-4">Shop Now</a>
-                <a href="#" class="btn btn-outline-light btn-lg px-4">Learn More</a>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content with Sidebar -->
+    <div class="main-container container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Categories</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active"><i class="fas fa-shopping-bag"></i> Bags</a></li>
+                <li><a href="#"><i class="fas fa-gem"></i> Jewelry</a></li>
+                <li><a href="#"><i class="fas fa-shoe-prints"></i> Shoes</a></li>
+                <li><a href="#"><i class="fas fa-spa"></i> Beauty Products</a></li>
+                <li><a href="#"><i class="fas fa-tshirt"></i> Men's Clothing</a></li>
+                <li><a href="#"><i class="fas fa-female"></i> Women's Clothing</a></li>
+                <li><a href="#"><i class="fas fa-baby"></i> Baby Items</a></li>
+                <li><a href="#"><i class="fas fa-glasses"></i> Eyewear</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> Office & School</a></li>
+                <li><a href="#"><i class="fas fa-snowflake"></i> Seasonal Products</a></li>
+                <li><a href="#"><i class="fas fa-mobile-alt"></i> Phone Accessories</a></li>
+                <li><a href="#"><i class="fas fa-dumbbell"></i> Sports & Fitness</a></li>
+            </ul>
+        </aside>
 
-    <!-- Categories Section -->
-    <section class="container mb-5">
-        <div class="text-center mb-5 animate-fadeIn delay-1">
-            <h2 class="fw-bold">Our Categories</h2>
-            <p class="text-muted">Browse through our wide range of products</p>
-        </div>
-        
-        <div class="row g-4">
-            <!-- Bags -->
-            <div class="col-md-3 animate-fadeIn delay-1">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-shopping-bag"></i>
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container text-center animate-fadeIn">
+                    <h1 class="display-4 fw-bold mb-4">Shop the Best Deals Online</h1>
+                    <p class="lead mb-5">Discover amazing products across all categories at unbeatable prices</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-light btn-lg px-4">Shop Now</a>
+                        <a href="#" class="btn btn-outline-light btn-lg px-4">Learn More</a>
                     </div>
-                    <h3 class="category-title">Bags</h3>
-                    <p class="text-muted">Stylish bags for every occasion</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
                 </div>
-            </div>
-            
-            <!-- Jewelry -->
-            <div class="col-md-3 animate-fadeIn delay-2">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <h3 class="category-title">Jewelry</h3>
-                    <p class="text-muted">Elegant pieces to complement your style</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Shoes -->
-            <div class="col-md-3 animate-fadeIn delay-1">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-shoe-prints"></i>
-                    </div>
-                    <h3 class="category-title">Shoes</h3>
-                    <p class="text-muted">Footwear for all seasons</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Beauty Products -->
-            <div class="col-md-3 animate-fadeIn delay-2">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3 class="category-title">Beauty Products</h3>
-                    <p class="text-muted">Enhance your natural beauty</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Men's Clothing -->
-            <div class="col-md-3 animate-fadeIn delay-2">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h3 class="category-title">Men's Clothing</h3>
-                    <p class="text-muted">Trendy outfits for men</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Women's Clothing -->
-            <div class="col-md-3 animate-fadeIn delay-3">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-female"></i>
-                    </div>
-                    <h3 class="category-title">Women's Clothing</h3>
-                    <p class="text-muted">Fashionable wear for women</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Baby Items -->
-            <div class="col-md-3 animate-fadeIn delay-2">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h3 class="category-title">Baby Items</h3>
-                    <p class="text-muted">Everything for your little one</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Eyewear -->
-            <div class="col-md-3 animate-fadeIn delay-3">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-glasses"></i>
-                    </div>
-                    <h3 class="category-title">Eyewear</h3>
-                    <p class="text-muted">See the world in style</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Office & School Supplies -->
-            <div class="col-md-3 animate-fadeIn delay-3">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3 class="category-title">Office & School</h3>
-                    <p class="text-muted">Essential supplies</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Seasonal Products -->
-            <div class="col-md-3 animate-fadeIn delay-3">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h3 class="category-title">Seasonal Products</h3>
-                    <p class="text-muted">Items for every season</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Phone Accessories -->
-            <div class="col-md-3 animate-fadeIn delay-3">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 class="category-title">Phone Accessories</h3>
-                    <p class="text-muted">Enhance your mobile experience</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-            
-            <!-- Sports & Fitness -->
-            <div class="col-md-3 animate-fadeIn delay-3">
-                <div class="category-card text-center p-4 h-100">
-                    <div class="category-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3 class="category-title">Sports & Fitness</h3>
-                    <p class="text-muted">Gear for your active lifestyle</p>
-                    <a href="#" class="btn btn-primary mt-3">Explore</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Featured Products -->
-    <section class="container mb-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Featured Products</h2>
-            <p class="text-muted">Popular items loved by our customers</p>
-        </div>
-        
-        <div class="row g-4">
-            <!-- Product cards would go here -->
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
+            <!-- Featured Categories -->
+            <section class="mb-5">
+                <div class="text-center mb-5 animate-fadeIn delay-1">
+                    <h2 class="fw-bold">Featured Categories</h2>
+                    <p class="text-muted">Browse through our wide range of products</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Bags -->
+                    <div class="col-md-4 col-lg-3 animate-fadeIn delay-1">
+                        <div class="category-card text-center p-4 h-100">
+                            <div class="category-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <h3 class="category-title">Bags</h3>
+                            <p class="text-muted">Stylish bags for every occasion</p>
+                            <a href="#" class="btn btn-primary mt-3">Explore</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Jewelry -->
+                    <div class="col-md-4 col-lg-3 animate-fadeIn delay-2">
+                        <div class="category-card text-center p-4 h-100">
+                            <div class="category-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3 class="category-title">Jewelry</h3>
+                            <p class="text-muted">Elegant pieces to complement your style</p>
+                            <a href="#" class="btn btn-primary mt-3">Explore</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Shoes -->
+                    <div class="col-md-4 col-lg-3 animate-fadeIn delay-1">
+                        <div class="category-card text-center p-4 h-100">
+                            <div class="category-icon">
+                                <i class="fas fa-shoe-prints"></i>
+                            </div>
+                            <h3 class="category-title">Shoes</h3>
+                            <p class="text-muted">Footwear for all seasons</p>
+                            <a href="#" class="btn btn-primary mt-3">Explore</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Beauty Products -->
+                    <div class="col-md-4 col-lg-3 animate-fadeIn delay-2">
+                        <div class="category-card text-center p-4 h-100">
+                            <div class="category-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3 class="category-title">Beauty Products</h3>
+                            <p class="text-muted">Enhance your natural beauty</p>
+                            <a href="#" class="btn btn-primary mt-3">Explore</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card product-card h-100">
-                    <img src="photo/1.jpg" class="card-img-top" alt="Product">
-                    <div class="card-body">
-                        <h5 class="card-title">Product Name</h5>
-                        <p class="card-text text-muted">Category</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="fw-bold text-primary">$49.99</span>
-                            <button class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-shopping-cart"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Repeat product cards as needed -->
-        </div>
-    </section>
+            </section>
 
-    <!-- Newsletter -->
-    <section class="bg-light py-5 mb-5">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-4">Stay Updated</h2>
-            <p class="lead mb-4">Subscribe to our newsletter for the latest deals and offers</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Your email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
+            <!-- Featured Products -->
+            <section class="mb-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Featured Products</h2>
+                    <p class="text-muted">Popular items loved by our customers</p>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <img src="photo/1.jpg" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="card-title">Designer Handbag</h5>
+                                <p class="card-text text-muted">Bags</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">$89.99</span>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <img src="photo/1.jpg" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="card-title">Diamond Necklace</h5>
+                                <p class="card-text text-muted">Jewelry</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">$199.99</span>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <img src="photo/1.jpg" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="card-title">Running Shoes</h5>
+                                <p class="card-text text-muted">Shoes</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">$59.99</span>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card product-card h-100">
+                            <img src="photo/1.jpg" class="card-img-top" alt="Product">
+                            <div class="card-body">
+                                <h5 class="card-title">Skincare Set</h5>
+                                <p class="card-text text-muted">Beauty Products</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold text-primary">$39.99</span>
+                                    <button class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+
+            <!-- Newsletter -->
+            <section class="bg-light py-5 mb-5 rounded">
+                <div class="container text-center">
+                    <h2 class="fw-bold mb-4">Stay Updated</h2>
+                    <p class="lead mb-4">Subscribe to our newsletter for the latest deals and offers</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Your email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -447,6 +322,16 @@
                 });
                 card.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Make sidebar menu items interactive
+            const menuItems = document.querySelectorAll('.sidebar-menu a');
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menuItems.forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
                 });
             });
         });
